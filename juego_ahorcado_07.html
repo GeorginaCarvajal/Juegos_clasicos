@@ -4,6 +4,18 @@
 		<meta charset="UTF-8">
 		<title>Ahorcado</title>
 		<style>
+			 .header {
+		background-image: linear-gradient(to right, #7f41e4, rgb(202, 169, 232));
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding: 20px;
+		width: 96%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+		}
+	
 			body{
 				width:960px;
 				margin:0 auto;
@@ -12,8 +24,8 @@
 				text-align:center;
 			}
 			#miCanvas{
-				border:dotted 2px rgb(125, 115, 135);
-				background:rgb(203, 188, 218);	
+				border:dotted 2px  rgb(202, 169, 232);
+				background:rgb(255, 255, 255);	
 			}
 		</style>
 		<script>
@@ -216,7 +228,9 @@
 	</head>
 
 	<body>
-		<h1>Ahorcado CANVAS</h1>
+		<div class="header">
+			<div class="title">Tic tac toe</div>
+		</div>
 		<canvas id="miCanvas" width="960px" height="450px">
 			Tu navegador no soporta CANVAS
 		</canvas>
