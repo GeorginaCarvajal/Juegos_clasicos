@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <title>CANVAS Memoria Números</title>
 <style>
+	.header {
+		background-image: linear-gradient(to right, #93b5de, rgb(22, 33, 130));
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding: 20px;
+		width: 96%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+		}
 body{
 	width:960px;
 	margin:0 auto;
@@ -13,7 +24,7 @@ h1{
 }
 #miCanvas{
 	border:dotted 2px rgb(102, 148, 105);
-	background:rgb(114, 177, 114);	
+	background:rgb(255, 255, 255);	
 }
 </style>
 <script>
@@ -176,7 +187,9 @@ window.onload = function(){
 </head>
 
 <body>
-<h1>Memoria de números</h1>
+	<div class="header">
+        <div class="title">Memoria</div>
+    </div>
 <canvas id="miCanvas" width="960px" height="400px">
 Tu navegador no soporta CANVAS
 </canvas>
