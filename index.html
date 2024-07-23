@@ -5,19 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            background-image: linear-gradient(to right, #5bff02, #43a29b, rgb(199, 14, 255));
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #7c4fa0;
+            color: white;
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+        .button img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px; /* Ajusta el ancho según tus necesidades */
+            height: 100px; /* Ajusta la altura según tus necesidades */
+            object-fit: cover; /* Asegura que la imagen se ajuste al tamaño especificado */
+        }
+        .button:hover {
+            background-color: #3b3443;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center;">
-        <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="juego_memoria.html">Memoria</a></button></div>
-        <div style="text-align: center;">
-            <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="juego_ahorcado_07.html">Ahorcado</a></button></div>
-            <div style="text-align: center;">
-                <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="juego_minas.html">Minas</a></button></div>
-                <div style="text-align: center;">
-                    <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="juego_tictactoe.html">TicTactoe</a></button></div>
-                    <div style="text-align: center;">
-                        <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="tanque/juego_tanque.html">Tanque</a></button></div>
-                        <div style="text-align: center;">
-                            <button style="background-color: #aebabd;  color: #ffffff; box-shadow: 3px 3px 5px #888888;"><a href="invaders/juego_invaders.html">invaders</a></button></div>
+    <div class="header">
+        <div class="title">Juegos Clásicos</div>
+    </div>
+    
+    <div class="container">
+        <a href="juego_memoria.html" class="button"><img src="img/memoria.avif" alt="Memoria">Memoria</a>
+        <a href="juego_ahorcado_07.html" class="button"><img src="img/ahorcado.png" alt="Ahorcado">Ahorcado</a>
+        <a href="juego_minas.html" class="button"><img src="img/minas.jpg" alt="Minas">Minas</a>
+        <a href="juego_tictactoe.html" class="button"><img src="img/tic.jpg" alt="TicTactoe">TicTactoe</a>
+        <a href="tanque/juego_tanque.html" class="button"><img src="img/tanque.jpg" alt="Tanque">Tanque</a>
+        <a href="invaders/juego_invaders.html" class="button"><img src="img/inva.jpg" alt="Invaders">Invaders</a>
+    </div>
 </body>
 </html>
