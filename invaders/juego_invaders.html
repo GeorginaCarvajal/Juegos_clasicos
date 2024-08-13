@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <title>Invasores</title>
 <style>
+	.header {
+		background-image: linear-gradient(to right, #e254ca, rgb(37, 222, 12));
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding: 20px;
+		width: 96%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+		}
 body{
 	width:600px;
 	margin:0 auto;
@@ -12,8 +23,8 @@ h1{
 	text-align:center;
 }
 #miCanvas{
-	border:dotted 2px yellow;
-	background:black;	
+	border:dotted 2px rgb(0, 26, 255);
+	background:rgb(0, 0, 0);	
 }
 </style>
 <script>
@@ -293,7 +304,9 @@ window.onload = function(){
 </head>
 
 <body>
-<h1>CANVAS Invaders</h1>
+	<div class="header">
+        <div class="title">Invaders</div>
+    </div>
 <canvas id="miCanvas" width="600px" height="500px">
 Tu navegador no soporta CANVAS
 </canvas>

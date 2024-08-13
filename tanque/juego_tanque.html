@@ -2,8 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CANVAS Tanque</title>
+<title> Tanque</title>
 <style>
+	.header {
+		background-image: linear-gradient(to right, #3eaee2, rgb(255, 238, 0));
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding: 20px;
+		width: 96%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+		}
 body{
 	width:700px;
 	margin:0 auto;
@@ -13,7 +24,7 @@ h1{
 }
 #miCanvas{
 	border:dotted 2px yellow;
-	background:green;	
+	background:rgb(224, 235, 245);	
 }
 </style>
 <script>
@@ -278,7 +289,9 @@ window.onload = function(){
 </head>
 
 <body>
-<h1>Tanque</h1>
+	<div class="header">
+        <div class="title">Tanque</div>
+    </div>
 <canvas id="miCanvas" width="700px" height="500px">
 Tu navegador no soporta CANVAS
 </canvas>
