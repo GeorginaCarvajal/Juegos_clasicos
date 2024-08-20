@@ -40,7 +40,7 @@ var teclaPulsada = null;
 var tecla_array = new Array();
 var balas_array = new Array();
 var enemigos_array = new Array();
-var colorEnemigo = ["red", "blue", "black", "white", "yellow", "pink", "purple"];
+var colorEnemigo = ["red", "blue", "black", "green", "yellow", "pink", "purple"];
 var colorBala = "red";
 var centroX, centroY;
 var w,h;
@@ -153,7 +153,7 @@ function colisiones(){
 }
 function score(){
 	ctx.save();
-	ctx.fillStyle = "white";
+	ctx.fillStyle = "black";
 	ctx.clearRect(0,0,canvas.width,40);
 	ctx.font = "bold 20px Courier";
 	ctx.fillText("SCORE: "+puntos+" VIDAS: "+vidas,10,20);

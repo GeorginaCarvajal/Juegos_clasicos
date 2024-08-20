@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Juego De La Serpiente</title>
     <link rel="stylesheet" href="styles.css">
+<style>
+    .header {
+		background-image: linear-gradient(to right, #5494e2, rgb(208, 222, 12));
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		color: #ffffff;
+		text-align: center;
+		padding: 20px;
+		width: 96%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+		}
+        </style>
 </head>
 <body>
-    <h1> Juego De La Serpiente</h1>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="header">
+        <div class="title">Serpiente</div>
+    </div>
+    <canvas id="gameCanvas" width="1430" height="400"></canvas>
     <p>Puntuación: <span id="score">0</span></p>
 
     <script src="script.js"></script>
